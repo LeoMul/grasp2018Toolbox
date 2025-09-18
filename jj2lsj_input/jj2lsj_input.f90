@@ -116,7 +116,7 @@ program main
            write (*,'(a)')'y'
            write (*,'(I2)') ii
            write (*,'(100(I2,1X))') indexWriteOut(ii,1:blockOffsets(ii))
-           if (indexWriteOut(ii,blockOffsets(ii).gt. 99)) then 
+           if (indexWriteOut(ii,blockOffsets(ii)).gt. 99) then 
                 stop 'bigger than 99'
            end if
         end if 
